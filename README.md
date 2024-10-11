@@ -111,7 +111,7 @@ The CI/CD pipeline is set up using GitHub Actions to automate testing, packaging
 
 ### CI/CD Configuration
 
-The pipeline configuration is defined in the `.github/workflows/ci-cd.yml` file. 
+The pipeline configuration is defined in the `.github/workflows/ci-cd.yml` file. And you can check the last executions in the "Actions" tab.
 
 ### Secrets Configuration
 

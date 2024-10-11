@@ -1,5 +1,3 @@
-Certainly! Below is a comprehensive README file for your YAML to CSV converter project, including detailed explanations of the project, installation instructions, usage examples, the CI/CD pipeline, and sections on error handling and scalability.
-
 # YAML-CSV Converter
 
 ## Overview

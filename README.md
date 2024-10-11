@@ -1,4 +1,4 @@
-# YAML-CSV Converter
+# YAML-CSV Converter Library
 
 ## Overview
 

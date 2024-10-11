@@ -147,5 +147,5 @@ The YAML to CSV Converter is designed to be adaptable for future data sources an
 
 ## Performance Considerations
 
-- **Processing Time**: The processing time may vary based on the size of the input files and the complexity of the data structures. For larger files, consider profiling the code to identify potential bottlenecks.
-- **Resource Utilization**: When deployed in a Docker container, monitor resource usage (CPU, memory) to ensure efficient operation.
+- **Processing Time**: The processing time may vary based on the size of the input files and the complexity of the data structures. For larger files, we can consider profiling the code to identify potential bottlenecks.
+- **Resource Utilization**: When deployed in a Docker container, we can monitor resource usage (CPU, memory) to ensure efficient operation.

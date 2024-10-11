@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/yaml-to-csv', methods=['POST'])
 def convert_yaml_to_csv():
-    """API endpoint to convert YAML to CSV."""
+    # API endpoint to convert YAML to CSV.
     try:
         if 'file' in request.files:
             yaml_file = request.files['file'].read().decode('utf-8')
@@ -29,7 +29,7 @@ def convert_yaml_to_csv():
 
 @app.route('/csv-to-yaml', methods=['POST'])
 def convert_csv_to_yaml():
-    """API endpoint to convert CSV to YAML."""
+    # API endpoint to convert CSV to YAML.
     try:
         if 'file' in request.files:
             csv_file = request.files['file'].read().decode('utf-8')

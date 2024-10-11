@@ -4,7 +4,7 @@ import io
 import sys
 
 def flatten_dict(d, parent_key='', sep='_'):
-    """Helper function to flatten nested dictionaries."""
+    # Helper function to flatten nested dictionaries.
     items = []
     for k, v in d.items():
         new_key = f"{parent_key}{sep}{k}" if parent_key else k
@@ -18,7 +18,7 @@ def flatten_dict(d, parent_key='', sep='_'):
     return dict(items)
 
 def yaml_to_csv(yaml_data):
-    """Converts YAML data to CSV format."""
+    # Converts YAML data to CSV format.
     try:
         yaml_obj = yaml.safe_load(yaml_data)
 
@@ -43,7 +43,7 @@ def yaml_to_csv(yaml_data):
         return str(e)
     
 def csv_to_yaml(csv_data):
-    """Converts CSV data to YAML format."""
+    # Converts CSV data to YAML format.
     input_stream = io.StringIO(csv_data)
     try:
         csv_reader = csv.DictReader(input_stream)
@@ -65,7 +65,7 @@ def csv_to_yaml(csv_data):
         raise ValueError(f"Error converting CSV to YAML: {str(e)}")
 
 def main():
-    """Main function to handle command-line arguments for YAML to CSV and CSV to YAML conversions."""
+    # Main function to handle command-line arguments for YAML to CSV and CSV to YAML conversions.
     if len(sys.argv) < 3:
         print("Usage:")
         print("  yaml-csv-converter yaml_to_csv input.yaml > output.csv")
